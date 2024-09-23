@@ -214,12 +214,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 
         <div class="header-navi-wrap pc-only">
-            <ul class="header-nav-wrap__list">
+        <ul class="header-nav-wrap__list">
                 <li class="arrow"><a href="/" title="top">TOP</a></li>
                 <li class="arrow"><a href="/company/" title="company">会社概要</a></li>
                 <li class="contact-btn-li">
                     <div class="contact-btn">
-                        <a class="smoothscroll" href="#top" class="btn btn--orange btn--radius">お問い合わせ</a>
+                        <a href="/contact/" class="btn btn--orange btn--radius">お問い合わせ</a>
                     </div>
                 </li>
                 <li class="contact-tel">
@@ -436,7 +436,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div> <!-- end footer-bottom -->
 
         <div class="footer-copyright">
-            <div>Copyright © 2024 s-reel</div>
+            <div>Copyright © 2024 エスリール</div>
         </div>
 
     </footer> <!-- end footer -->

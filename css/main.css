@@ -1519,7 +1519,7 @@ button.btn--radius
 }
 @media only screen and (max-width: 1070px) {
     .parallax-mirror{
-        height: 644px !important
+        /* height: 644px !important */
     }
     .parallax-slider{
         height: 644px!important;
@@ -1548,9 +1548,9 @@ button.btn--radius
 }
 @media only screen and (max-width: 800px) {
     .parallax-slider{
-        height: 444px!important;
-        width: 800px!important;
-        left: -80px !important;
+        height: 500px !important;
+        width: 900px !important;
+        left: -86px !important;
     }
     .s-header {
         height: 50px;
@@ -1815,7 +1815,7 @@ button.btn--radius
  * ------------------------------------------------------------------- */
 @media only screen and (max-width: 1070px) {
     .s-home {
-        max-height: 650px!important;
+        max-height: 510px!important;
     }
 }
 @media only screen and (max-width: 0px) {
@@ -1886,8 +1886,9 @@ button.btn--radius
 
 @media only screen and (max-width: 600px) {
     .s-home {
-        max-height: 450px!important;
+        max-height: 400px !important;
         background-position: 23% 100% !important;
+        margin-bottom: 20px;
     }
     .home-content h1 {
         font-size: 3.8rem;
@@ -1933,7 +1934,8 @@ button.btn--radius
  *
  * ------------------------------------------------------------------- */
 .s-trouble {
-    padding-top: 15.2rem;
+    /* padding-top: 15.2rem; */
+    padding-top: 5.2rem;
     padding-bottom: 9rem;
     background: linear-gradient(to top, rgba(211, 237, 248, 1) 0%, rgba(255, 255, 255, 0.7) 100%);
     color: #010507;
@@ -2070,8 +2072,11 @@ button.btn--radius
     }
 }
 @media only screen and (max-width: 1070px) {
+    .s-trouble {
+        padding-top: 0rem;
+    }
     .s-trouble-contents {
-        margin-top: 80px;
+        margin-top: 40px;
     }
 }
 @media only screen and (max-width: 900px) {
@@ -2415,6 +2420,9 @@ button.btn--radius
     }
  }
 @media only screen and (max-width: 600px) {
+    .s-works {
+        padding: 0 0 12rem 0;
+    }
     .s-works h2 {
         font-size: 4.4rem;
     }
@@ -2734,6 +2742,7 @@ button.btn--radius
     font-size: 8.6rem;
     margin: -90px 22px -50px 0;
     font-family: "Oswald", sans-serif;
+    font-weight: 600;
 }
 .flow-list .flow-item .number.z1 {
     letter-spacing: 0.5rem;
@@ -2759,13 +2768,24 @@ button.btn--radius
 }
 @media only screen and (max-width: 1100px) {
     .flow-item.square {
-        width: 98%;
+        width: 80%;
     }
     .flow-list .flow-item .detail {
         width: 560px;
     }
 }
+@media only screen and (max-width: 950px) {
+    .flow-item.square {
+        width: 75%;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .flow-item.square {
+        width: 98%;
+    }
+}
 @media only screen and (max-width: 600px) {
+
     #flow .section-header {
         margin-top: -200px;
     }
