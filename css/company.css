@@ -1,0 +1,237 @@
+/* ------------------------------------------------------------------- 
+ * ## top-area 会社概要
+ * ------------------------------------------------------------------- */
+.top-area {
+    padding-top: 10rem;
+    position: relative;
+    text-align: center;
+}
+.top-area img {
+    height: 250px;
+    object-fit: cover;
+}
+.top-area .message-title {
+    position: absolute;
+    top: 52%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+.top-area .message-title h2 {
+    padding: 0px 0 10px 0px;
+    margin: 0;
+    color: #fff;
+    font-size: 1.8rem;
+}
+.top-area .message-title h1 {
+    padding: 0;
+    margin: 0;
+    color: #fff;
+    font-weight: 600;
+    font-size: 3.8rem;
+}
+/* ------------------------------------------------------------------- 
+ * responsive:
+ * top-area
+ * ------------------------------------------------------------------- */
+@media only screen and (max-width: 600px) {
+    .top-area {
+        padding-top: 0rem;
+    }
+    .top-area img {
+        height: 180px;
+    }
+    .top-area .message-title {
+        top: 42%;
+    }
+}
+
+/* ------------------------------------------------------------------- 
+ * ## message 
+ * ------------------------------------------------------------------- */
+ .s-message {
+    padding-top: 6rem;
+    padding-bottom: 15.2rem;
+    color: #757575;
+    position: relative;
+}
+.s-message .sub-title {
+    font-size: 1.9rem;
+}
+.s-message h2 {
+    font-size: 3.7rem;
+    font-weight: 600;
+    color: #323232;
+    margin-bottom: -20px;
+}
+.s-message .message-h {
+    margin-top: -88px;
+}
+.message-list {
+    padding: 0 98px;
+}
+
+.message-list .message-item {
+    display: flex;
+    align-items: center;
+    padding-left: 0;
+    padding-right: 0;
+}
+.message-list .message-item h4 {
+    position: relative;
+    padding: 0px 8px 4px 4px;
+    color: #333;
+    text-align: center;
+    margin: 0 0 21px 0px;
+    text-align: left;
+    font-size: 2.9rem;
+    width: 86%;
+    width: fit-content;
+    font-weight: 600;
+}
+.s-message .message-title img {
+    width: 630px;
+}
+
+.message-list .message-item h3::before,
+.message-list .message-item h3::after {
+    position: absolute;
+    content: '';
+}
+.message-item .message-img {
+    position: relative;
+}
+.message-item .message-text {
+    padding: 0px 0px 0px 37px;
+}
+.message-item .message-text p {
+    padding: 0 0 0 4px;
+    color: #222;
+    font-size: 1.65rem;
+}
+
+
+/* ------------------------------------------------------------------- 
+ * responsive:
+ * message
+ * ------------------------------------------------------------------- */
+@media only screen and (max-width: 1200px) {
+    .message-list {
+        padding: 0 30px;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .message-list {
+        padding: 0;
+    }
+    .s-message .message-img {
+        margin: 0 auto;
+    }
+    .message-item .message-text {
+        padding: 20px 0px 0px 37px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .s-message {
+        padding-top: 3rem;
+        padding-bottom: 11.2rem;
+    }
+    .s-message h2 {
+        font-size: 4.6rem;
+        margin-bottom: 10px;
+    }
+    .s-message .section-header {
+        margin-bottom: 0px;
+    }
+    .message-list {
+        padding: 0 34px;
+    }
+    .message-list .message-item {
+        height: 282px;
+    }
+    .message-item .message-text {
+        padding: 80px 0 0 0;
+    }
+}
+
+
+/* ------------------------------------------------------------------- 
+ * ## about
+ * ------------------------------------------------------------------- */
+.s-about {
+    padding-bottom: 39.4rem;
+    position: relative;
+}
+.s-about .sub-title {
+    font-size: 1.9rem;
+}
+.s-about h2 {
+    font-size: 3.7rem;
+    font-weight: 600;
+    color: #323232;
+    margin-bottom: -20px;
+}
+
+.about-list .about-table {
+    border-spacing: 1px;
+    margin-top: 10px;
+    font-size: 1.6rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.about-list .about-table table {
+    border-collapse: collapse;
+}
+.about-list .about-table th,
+.about-list .about-table td {
+    border-bottom: 3px solid #e8e8e8;
+    border-top: 3px solid #e8e8e8;
+}
+.about-list .about-table th {
+    background-color: #2da0cd;
+    color: #fff;
+    padding: 0 10px 0 20px;
+    height: 64px;
+    width: 248px;
+    font-weight: 600;
+}
+.about-list .about-table td {
+    padding: 0.6rem 1rem 0.6rem 5rem;
+    color: #000;
+}
+
+.s-about .top-banner {
+    margin-top: 40px;
+    position: unset;
+    top: unset;
+}
+
+/* ------------------------------------------------------------------- 
+ * responsive:
+ * message
+ * ------------------------------------------------------------------- */
+@media only screen and (max-width: 1200px) {
+    .about-list .about-table th {
+        width: 30%;
+    }
+    .about-list .about-table td {
+        padding: 0.6rem 1rem 0.6rem 2rem;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .s-about {
+        padding-bottom: 22.4rem;
+    }
+}
+@media only screen and (max-width: 400px) {
+    .s-about {
+        padding-bottom: 7.4rem;
+    }
+}
+
+
+
+
+
+

@@ -1,0 +1,265 @@
+/* ------------------------------------------------------------------- 
+ * ## top-area お問い合わせ
+ * ------------------------------------------------------------------- */
+.top-area {
+    padding-top: 10rem;
+    position: relative;
+    text-align: center;
+}
+.top-area img {
+    height: 250px;
+    object-fit: cover;
+}
+.top-area .message-title {
+    position: absolute;
+    top: 52%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+.top-area .message-title h2 {
+    padding: 0px 0 10px 0px;
+    margin: 0;
+    color: #fff;
+    font-size: 1.8rem;
+}
+.top-area .message-title h1 {
+    padding: 0;
+    margin: 0;
+    color: #fff;
+    font-weight: 600;
+    font-size: 3.8rem;
+}
+/* ------------------------------------------------------------------- 
+ * responsive:
+ * top-area
+ * ------------------------------------------------------------------- */
+ @media only screen and (max-width: 600px) {
+    .top-area {
+        padding-top: 0rem;
+    }
+    .top-area img {
+        height: 180px;
+    }
+    .top-area .message-title {
+        top: 42%;
+    }
+}
+
+/* ------------------------------------------------------------------- 
+ * ## top-contact バナー + 電話番号
+ * ------------------------------------------------------------------- */
+ .s-top-contact  {
+    padding-top: 2.4rem;
+    padding-bottom: 45.4rem;
+    /* position: relative; */
+}
+.s-top-contact .top-banner {
+    position: unset;
+}
+.s-top-contact .top-tel {
+    margin-top: 30px;
+}
+.s-top-contact .top-tel .top-contact-item {
+    padding: 30px 0;
+    margin: 0 auto;
+    box-shadow: 4px 6px #999;
+    box-shadow: 6px 6px 10px 0px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    max-width: 800px;
+    font-size: 2.5rem;
+}
+.s-top-contact .top-tel .top-contact-item div {
+    text-align: center;
+    color: #222;
+    font-weight: 600;
+    margin-top: 16px;
+}
+.s-top-contact .top-tel .top-contact-item div.tel {
+    font-size: 8.5rem;
+    font-family: "Oswald", sans-serif;
+    letter-spacing: 0.1rem;
+    color: #2ea0ce;
+    margin-top: -28px;
+}
+.s-top-contact .top-tel .top-contact-item div.time {
+    margin-top: -27px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 2.1rem;
+}
+
+/* ------------------------------------------------------------------- 
+ * responsive:
+ * top-contact 
+ * ------------------------------------------------------------------- */
+@media only screen and (max-width: 600px) {
+    .s-top-contact {
+        padding-bottom: 5.4rem;
+    }
+    .s-top-contact .top-tel .top-contact-item {
+        width: 92%;
+        font-size: 1.8rem;
+    }
+    .s-top-contact .top-tel .top-contact-item div.tel {
+        font-size: 5.4rem;
+        margin-top: -13px;
+    }
+    .s-top-contact .top-tel .top-contact-item div.time {
+        margin-top: -8px;
+        font-size: 1.6rem;
+    }
+}
+
+
+/* ------------------------------------------------------------------- 
+ * ## form
+ * ------------------------------------------------------------------- */
+.s-form {
+    padding-top: 18rem;
+    margin-bottom: -30px;
+    /* position: relative; */
+}
+.s-form .sub-title {
+    font-size: 1.9rem;
+}
+.s-form h2 {
+    font-size: 3.7rem;
+    font-weight: 600;
+    color: #323232;
+    margin-bottom: -20px;
+}
+.form-content {
+    max-width: 800px;
+    color: #000;
+}
+.form-content .contact-form {
+    padding: 0 10px;
+}
+.form-item div {
+    display: flex;
+}
+.form-item div:not(.boder-none) {
+    border-bottom: 1px solid #ddd;
+}
+.form-item .label {
+    padding: 32px 0px 32px 0;
+    width: 184px;
+    font-size: 1.8rem;
+    font-weight: 600;
+    align-items: center;
+}
+.form-item .label span{
+    color: red;
+    font-size: 1.8rem;
+    margin-left: 4px;
+}
+.form-item .input {
+    padding: 15px 0px 15px 0;
+    width: 100%;
+    align-items: center;
+}
+.form-item .input span {
+    margin: 0px 10px;
+    font-size: 2.0rem;
+}
+.form-item input[type="text"],
+.form-item textarea {
+    display: block;
+    height: 4rem;
+    padding: 0.5rem 0.8rem;
+    border: 1px solid #444 !important;
+    outline: none;
+    color: #333333;
+    font-family: "Hiragino Sans", sans-serif;
+    font-size: 1.4rem;
+    line-height: 3rem;
+    max-width: 100%;
+    border: none;
+    width: 100%;
+    border-radius: 6px;
+    font-size: 1.7rem;
+    margin-bottom: 0;
+}
+.form-item textarea {
+    resize: none;
+    min-height: 15.2rem;
+}
+.form-item input[type="text"][name="year"] {
+    max-width: 122px;
+}
+.form-item input[type="text"][name="month"],
+.form-item input[type="text"][name="day"] {
+    max-width: 64px;
+}
+.form-content .conf {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 1.9rem;
+}
+.form-content .conf input[type="checkbox"] {
+    margin-right: 10px;
+}
+.form-content .conf label {
+    font-size: 1.8rem;
+    font-weight: 300;
+}
+.form-content .contact-btn {
+    text-align: center;
+}
+.form-content .contact-form-btn {
+    margin-top: 74px;
+}
+
+.message_area {
+    margin-left: -20px;
+}
+.message_area p.error {
+    color: #d64343;
+    margin: 3px 0 0 0;
+}
+.message_area p.success {
+    color: #43d679;
+    margin: 0;
+}
+
+/* ------------------------------------------------------------------- 
+ * responsive:
+ * form 
+ * ------------------------------------------------------------------- */
+ @media only screen and (max-width: 600px) {
+    .s-form {
+        padding-top: 2rem;
+    }
+    .s-form h2 {
+        font-size: 2.7rem;
+    }
+    .form-content{
+        width: 100%;
+    }
+    .form-item .label {
+        font-size: 1.5rem;
+        width: 120px;
+    }
+    .form-item .label.mail span{
+        margin: 18px 24px 0 0;
+    }
+    .s-form .section-header .col-full {
+        margin-top: 50px;
+    }
+    .message_area{
+        margin: 10px;
+    }
+}
+@media only screen and (max-width: 400px) {
+    .s-form .section-header .col-full {
+        margin-top: 0px;
+    }
+}
+
+
+
+
+
+
