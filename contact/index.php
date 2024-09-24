@@ -1,5 +1,4 @@
 <?php
-// header("Content-Security-Policy: script-src 'self' trickdart.tokyo;");
 header('X-Frame-Options: SAMEORIGIN');
 ini_set('display_errors', "Off");
 
@@ -153,8 +152,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $data['day'] = null;
         $data['message'] = null;
         $data['confirmation'] = null;
-   }else {
-        $error_message[] = "メールの送信に失敗しました。後でもう一度お試しください。"; 
    }
 }
 ?>
