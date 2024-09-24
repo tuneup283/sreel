@@ -2026,7 +2026,7 @@ button.btn--radius
     left: 24.9%;
     top: 67%;
     z-index: 1;
-  }
+}
 
 
 /* ------------------------------------------------------------------- 
@@ -2143,6 +2143,11 @@ button.btn--radius
         width: 180px;
         height: 180px;
         font-size: 1.8rem;
+    }
+    .s-trouble .blur {
+        background: radial-gradient(circle, rgb(211, 237, 248), rgb(211 237 248 / 60%));
+        height: 120px;
+        top: 82%;
     }
 }
 @media only screen and (max-width: 400px) {
