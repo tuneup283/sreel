@@ -123,8 +123,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (isset($data['name']) && isset($data['kana']) && isset($data['mail']) && isset($data['tel']) &&
     isset($data['message']) && isset($data['confirmation']) && count($error_message) == 0) {
 
-        // メールの送信 
-        $to = "yasunori_tanouchi@bloomf.jp";
+        // メールの送信
+        if($_SERVER['HTTP_HOST'] == "s-reel.com"){
+            $to = "info@s-reel.com";
+        } else{
+            $to = "tuneup.work@gmail.com";
+        }
         // 送信先のメールアドレスを指定 
         $subject = "ホームページよりお問い合わせがありました。";
         $message_body = "お名前: " . $data['name'] . "\n"; 

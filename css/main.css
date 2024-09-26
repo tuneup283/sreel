@@ -18,7 +18,7 @@ html, body {
 
 body {
     background: #fff;
-    font-family: "Hiragino Sans", serif;
+    font-family: "Hiragino Sans", sans-serif;
     font-size: 1.7rem;
     font-style: normal;
     font-weight: normal;
@@ -173,7 +173,7 @@ em, i, strong, b {
 }
 
 em, i {
-    font-family: "Hiragino Sans", serif;
+    font-family: "Hiragino Sans", sans-serif;
 }
 
 strong, b {
@@ -233,7 +233,7 @@ abbr {
 }
 
 var, kbd, samp, code, pre {
-    font-family: 'Hiragino Sans';
+    font-family: "Hiragino Sans", sans-serif;
 }
 
 pre {
@@ -386,7 +386,7 @@ table {
     border-width: 0;
     width: 100%;
     max-width: 100%;
-    font-family: "Hiragino Sans", serif;
+    font-family: "Hiragino Sans", sans-serif;
 }
 
 th, td {
