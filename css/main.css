@@ -1503,6 +1503,9 @@ button.btn--radius
 .header-menu-icon::after {
     bottom: -9px;
 }
+.parallax-mirror{
+    /* top: 40px!important; */
+}
 
 
 /* ------------------------------------------------------------------- 
@@ -1522,9 +1525,10 @@ button.btn--radius
         /* height: 644px !important */
     }
     .parallax-slider{
-        height: 644px!important;
-        width: 1080px!important;
-        left: 0!important;
+        height: auto !important;
+        width: 100% !important;
+        left: 0 !important;
+        top: 0px !important;
     }
 }
 @media only screen and (max-width: 800px) {
@@ -1547,11 +1551,11 @@ button.btn--radius
     }
 }
 @media only screen and (max-width: 800px) {
-    .parallax-slider{
-        height: 500px !important;
-        width: 900px !important;
-        left: -86px !important;
-    }
+    /* .parallax-slider{
+        height: auto !important;
+        width: 610px !important;
+        left: -63px !important;
+    } */
     .s-header {
         height: 50px;
     }
@@ -1566,11 +1570,11 @@ button.btn--radius
         right: 25px;
     }
 }
-@media only screen and (max-width: 740px) {
+/* @media only screen and (max-width: 740px) {
     .parallax-slider{
         left: -100px !important;
     }
-}
+} */
 
 @media only screen and (max-width: 400px) {
     .header-menu-text {
@@ -1813,6 +1817,28 @@ button.btn--radius
  * responsive:
  * home
  * ------------------------------------------------------------------- */
+@media only screen and (min-width: 2000px) {
+    .parallax-mirror {
+        height: 1000px!important;
+    }
+    .parallax-mirror .parallax-slider {
+        top: -100px!important;
+    }
+    .s-trouble {
+        margin-top: 200px;
+    }
+}
+@media only screen and (min-width: 2300px) {
+    .parallax-mirror {
+        height: 1300px!important;
+    }
+    .parallax-mirror .parallax-slider {
+        top: -100px!important;
+    }
+    .s-trouble {
+        margin-top: 500px;
+    }
+}
 @media only screen and (max-width: 1070px) {
     .s-home {
         max-height: 510px!important;
@@ -1848,6 +1874,10 @@ button.btn--radius
 }
 
 @media only screen and (max-width: 800px) {
+    .s-home {
+        max-height: none;
+        height: auto;
+    }
     .home-content h3 {
         font-size: 1.5rem;
     }
@@ -1886,7 +1916,7 @@ button.btn--radius
 
 @media only screen and (max-width: 600px) {
     .s-home {
-        max-height: 400px !important;
+        /* max-height: 400px !important; */
         background-position: 23% 100% !important;
         margin-bottom: 20px;
     }
@@ -1936,10 +1966,14 @@ button.btn--radius
 .s-trouble {
     /* padding-top: 15.2rem; */
     padding-top: 5.2rem;
-    padding-bottom: 9rem;
+    /* padding-bottom: 9rem; */
     background: linear-gradient(to top, rgba(211, 237, 248, 1) 0%, rgba(255, 255, 255, 0.7) 100%);
     color: #010507;
     position: relative;
+}
+.s-trouble .section-header {
+    margin-bottom: 0.2rem;
+    padding-bottom: 0;
 }
 .s-trouble::before{
     content: "";
@@ -1963,47 +1997,65 @@ button.btn--radius
     width: 90%;
 }
 .s-trouble .trouble-item {
+    /* position: relative; */
     display: flex;
     justify-content: center;
     margin-top: -50px;
 }
+/* .s-trouble .bubble-r1,
+.s-trouble .bubble-r2,
+.s-trouble .bubble-r3,
+.s-trouble .bubble-r4 {
+    position: relative;
+} */
+/* .trouble-item img {
+    width: 220px;
+}
+.s-trouble .bubble-r1 img,
+.s-trouble .bubble-r4 img{
+    width: 260px;
+}
 .s-trouble .border-radius {
-    width: 256px;
-    height: 256px;
-    background-color: #2ea0ce;
-    border-radius: 50%;
-    color: #fff;
+    position: absolute;
+    top: 36px;
+    left: 28px;
+    color: #1e116d;
     text-align: center;
     display: grid;
     place-items: center;
-    font-size: 2.4rem;
+    font-size: 2.1rem;
     font-weight: 600;
     line-height: 3.0rem;
 }
-.s-trouble .border-radius.r1,
-.s-trouble .border-radius.r4 {
+.s-trouble .bubble-r1{
+    margin-left: 260px;
+}
+.s-trouble .bubble-r1,
+.s-trouble .bubble-r4 {
     margin-top: 150px;
 }
-.s-trouble .border-radius.r1, 
-.s-trouble .border-radius.r2 {
-    margin-right: 18px;
+.s-trouble .bubble-r2 {
+    margin-right: 80px;
 }
-.s-trouble .border-radius.r3,
-.s-trouble .border-radius.r4 {
-    margin-left: 18px;
+.s-trouble .bubble-r3{
+    margin-left: 80px;
+    left: 30px;
 }
+.s-trouble .bubble-r4 {
+    margin-right: 260px;
+} */
 .s-trouble .trouble-image {
     text-align: center;
-    position: absolute;
-    left: 36%;
-    top: 51%;
+    /* position: absolute;
+    left: 37%;
+    top: 35%; */
     z-index: 30;
 }
 .s-trouble .trouble-image img {
-    width: 386px;
+    max-width: 65%;
 }
 .s-trouble .trouble-line {
-    height: 192px;
+    height: 240px;
     width: 49.5%;
 }
 .s-trouble .trouble-line .contact__line2 {
@@ -2012,7 +2064,7 @@ button.btn--radius
     width: 2px;
     height: 15.7rem;
     background-color: #333;
-    margin-top: 69px;
+    /* margin-top: 69px; */
     left: 49.9%;
     z-index: 30;
 }
@@ -2021,10 +2073,10 @@ button.btn--radius
     aspect-ratio: 1 / 1;
     background: radial-gradient(circle, rgb(211, 237, 248), rgb(211 237 248 / 0%));
     filter: blur(13px);
-    width: min(50%, 1000px);
-    height: 200px;
-    left: 24.9%;
-    top: 67%;
+    width: min(40%, 1000px);
+    height: 100px;
+    left: 29.9%;
+    top: 73%;
     z-index: 1;
 }
 
@@ -2078,6 +2130,9 @@ button.btn--radius
     .s-trouble-contents {
         margin-top: 40px;
     }
+    .s-trouble .trouble-image img {
+        max-width: 80%;
+    }
 }
 @media only screen and (max-width: 900px) {
     .banner {
@@ -2097,7 +2152,7 @@ button.btn--radius
         flex-wrap: wrap;
         width: 100%;
     }
-    .s-trouble .border-radius.r1, 
+    /* .s-trouble .border-radius.r1, 
     .s-trouble .border-radius.r2 {
         margin: 0;
     }
@@ -2114,12 +2169,12 @@ button.btn--radius
     .s-trouble .border-radius.r3, 
     .s-trouble .border-radius.r4 {
         margin: 10px;
+    } */
+    .s-trouble .trouble-image img {
+        max-width: 94%;
     }
     .s-trouble .trouble-image {
         position: unset;
-    }
-    .trouble-image img {
-        width: 300px!important;
     }
     .s-trouble::before {
         height: 100px;
@@ -2128,7 +2183,7 @@ button.btn--radius
         height: 120px;
     }
     .s-trouble .trouble-line .contact__line2 {
-        height: 11.7rem;
+        height: 7.7rem;
         margin-top: 8px;
     }
     .s-trouble .blur {
@@ -2146,8 +2201,8 @@ button.btn--radius
     }
     .s-trouble .blur {
         background: radial-gradient(circle, rgb(211, 237, 248), rgb(211 237 248 / 60%));
-        height: 120px;
-        top: 82%;
+        height: 60px;
+        top: 72%;
     }
 }
 @media only screen and (max-width: 400px) {
