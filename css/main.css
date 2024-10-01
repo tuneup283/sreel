@@ -1817,7 +1817,7 @@ button.btn--radius
  * responsive:
  * home
  * ------------------------------------------------------------------- */
-@media only screen and (min-width: 2000px) {
+@media only screen and (min-width: 1800px) {
     .parallax-mirror {
         height: 1000px!important;
     }
@@ -1828,7 +1828,7 @@ button.btn--radius
         margin-top: 200px;
     }
 }
-@media only screen and (min-width: 2300px) {
+@media only screen and (min-width: 2200px) {
     .parallax-mirror {
         height: 1300px!important;
     }
@@ -1837,6 +1837,22 @@ button.btn--radius
     }
     .s-trouble {
         margin-top: 500px;
+    }
+}
+@media only screen and (min-width: 2800px) {
+    .parallax-mirror {
+        height: 1500px!important;
+    }
+    .parallax-mirror .parallax-slider {
+        top: -100px!important;
+    }
+    .s-trouble {
+        margin-top: 700px;
+    }
+}
+@media only screen and (min-width: 3200px) {
+    .parallax-mirror .parallax-slider {
+        top: -200px!important;
     }
 }
 @media only screen and (max-width: 1070px) {

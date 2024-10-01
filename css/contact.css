@@ -225,6 +225,9 @@
     color: #43d679;
     margin: 0;
 }
+.s-form .section-header .col-full {
+    margin-top: 50px;
+}
 
 /* ------------------------------------------------------------------- 
  * responsive:
@@ -246,9 +249,6 @@
     }
     .form-item .label.mail span{
         margin: 18px 24px 0 0;
-    }
-    .s-form .section-header .col-full {
-        margin-top: 50px;
     }
     .message_area{
         margin: 10px;
