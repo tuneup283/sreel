@@ -54,7 +54,7 @@
  * ------------------------------------------------------------------- */
  .s-message {
     padding-top: 6rem;
-    padding-bottom: 15.2rem;
+    padding-bottom: 5.2rem;
     color: #757575;
     position: relative;
 }
@@ -147,7 +147,7 @@
         margin-bottom: 0px;
     }
     .message-list {
-        padding: 0 34px;
+        padding: 0 20px;
     }
     .message-list .message-item {
         height: 282px;
@@ -223,7 +223,11 @@
 }
 @media only screen and (max-width: 600px) {
     .s-about {
-        padding-bottom: 22.4rem;
+        padding-bottom: 29.4rem;
+    }
+    .s-about .about-content {
+        padding-left: 10px;
+        padding-right: 10px;
     }
 }
 @media only screen and (max-width: 400px) {

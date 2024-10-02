@@ -732,13 +732,13 @@ input[type="submit"] {
 button:hover,
 input[type="reset"]:hover,
 input[type="button"]:hover,
-.btn:focus,
-button:focus,
+/* .btn:focus,
+button:focus, */
 input[type="reset"]:focus,
 input[type="button"]:focus {
     /* background-color: #b8b8b8;
     border-color: #b8b8b8; */
-    color: #000000;
+    color: #999;
     outline: 0;
 }
 input[type="submit"]:hover,
@@ -2018,53 +2018,8 @@ button.btn--radius
     justify-content: center;
     margin-top: -50px;
 }
-/* .s-trouble .bubble-r1,
-.s-trouble .bubble-r2,
-.s-trouble .bubble-r3,
-.s-trouble .bubble-r4 {
-    position: relative;
-} */
-/* .trouble-item img {
-    width: 220px;
-}
-.s-trouble .bubble-r1 img,
-.s-trouble .bubble-r4 img{
-    width: 260px;
-}
-.s-trouble .border-radius {
-    position: absolute;
-    top: 36px;
-    left: 28px;
-    color: #1e116d;
-    text-align: center;
-    display: grid;
-    place-items: center;
-    font-size: 2.1rem;
-    font-weight: 600;
-    line-height: 3.0rem;
-}
-.s-trouble .bubble-r1{
-    margin-left: 260px;
-}
-.s-trouble .bubble-r1,
-.s-trouble .bubble-r4 {
-    margin-top: 150px;
-}
-.s-trouble .bubble-r2 {
-    margin-right: 80px;
-}
-.s-trouble .bubble-r3{
-    margin-left: 80px;
-    left: 30px;
-}
-.s-trouble .bubble-r4 {
-    margin-right: 260px;
-} */
 .s-trouble .trouble-image {
     text-align: center;
-    /* position: absolute;
-    left: 37%;
-    top: 35%; */
     z-index: 30;
 }
 .s-trouble .trouble-image img {
@@ -2080,7 +2035,6 @@ button.btn--radius
     width: 2px;
     height: 15.7rem;
     background-color: #333;
-    /* margin-top: 69px; */
     left: 49.9%;
     z-index: 30;
 }
@@ -2141,7 +2095,7 @@ button.btn--radius
 }
 @media only screen and (max-width: 1070px) {
     .s-trouble {
-        padding-top: 0rem;
+        padding-top: 2rem;
     }
     .s-trouble-contents {
         margin-top: 40px;
@@ -2368,7 +2322,7 @@ button.btn--radius
 }
 @media only screen and (max-width: 600px) {
     .s-services h2 {
-        font-size: 4.6rem;
+        font-size: 4.0rem;
     }
     .services-list .service-item {
         height: 282px;
@@ -2386,6 +2340,9 @@ button.btn--radius
     }
     .services-list .service-item {
         height: 278px;
+    }
+    .services-list .service-item.item1 {
+        margin-bottom: 6px;
     }
 }
 
@@ -2729,6 +2686,11 @@ button.btn--radius
     .contact-area-list .contact-area-item a, 
     .contact-area-list .tel-area-item a {
         margin: 0 auto;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .s-contact-area .section-header {
+        padding: 0 10px;
     }
 }
 
@@ -3755,7 +3717,7 @@ footer .row {
  * ------------------------------------------------------------------- */
  @media only screen and (max-width: 600px) {
     .footer-bottom{
-        width: 63%;
+        width: 70%;
     }
     .footer-bottom .menu ul li {
         margin: -40px 0px;

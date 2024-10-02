@@ -249,16 +249,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     <li class="arrow"><a class="smoothscroll" href="#top" title="contact">お問い合わせ</a></li>
                 </ul>
             </div>
-
-            <!-- <div class="contact-tel">
-                <div class="tel-icon">
-                    <img src="images/tel-icon.png" alt="電話番号">
-                </div>
-                <div class="tel-number-area">
-                    <a href="tel:0120-888-134" class="tel-number">0120-888-134</a>
-                    <p>受付時間：年中無休(24時間対応)</p>
-                </div>
-            </div> -->
             
         </nav> <!-- end header-nav -->
 
