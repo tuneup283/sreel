@@ -1852,7 +1852,7 @@ button.btn--radius
 }
 @media only screen and (min-width: 3200px) {
     .parallax-mirror .parallax-slider {
-        top: -200px!important;
+        top: -250px!important;
     }
 }
 @media only screen and (max-width: 1070px) {
@@ -1935,6 +1935,9 @@ button.btn--radius
         /* max-height: 400px !important; */
         background-position: 23% 100% !important;
         margin-bottom: 20px;
+    }
+    .home-content {
+        padding-bottom: 7.6rem;
     }
     .home-content h1 {
         font-size: 3.8rem;
@@ -2189,7 +2192,7 @@ button.btn--radius
  * ------------------------------------------------------------------- */
 .s-services {
     padding-top: 0.1rem;
-    padding-bottom: 19.2rem;
+    padding-bottom: 2.0rem;
     background-color: #feead2;
     color: #757575;
     position: relative;
@@ -2346,6 +2349,180 @@ button.btn--radius
     }
 }
 
+
+/* ------------------------------------------------------------------- 
+ * ## services2 サービスのご紹介
+ * ------------------------------------------------------------------- */
+ .s-services2 {
+    padding-top: 16rem;
+    padding-bottom: 19.2rem;
+    background: linear-gradient(90deg, rgba(240, 249, 253, 1) 20%, rgba(209, 237, 248, 1) 60%);
+    color: #757575;
+    position: relative;
+}
+.s-services2 .section-header {
+    max-width: 1440px;
+}
+.s-services2 h2 {
+    font-size: 5.7rem;
+    font-weight: bold;
+    color: #323232;
+    margin-bottom: -20px;
+    margin-top: 26px;
+}
+.s-services2 .services-h {
+    margin-top: -88px;
+}
+.s-services2 .services2-subtitle {
+    padding-right: 10px;
+}
+.s-services2 .services2-subtitle img {
+    max-width: 850px;
+}
+.s-services2 .services2-list {
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+}
+.services2-list .services2-item{
+    padding: 1.4em 12px;
+    flex-basis: 10%;
+    color: #000;
+}
+.services2-list .services2-item .border-radius {
+    width: 180px;
+    height: 180px;
+    line-height: 200px;
+    background-color: #2ea0ce;
+    border-radius: 50%;
+    color: #000;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.services2-list .services2-item .border-radius img {
+    width: 110px;
+}
+.services2-list .services2-item .border-radius img.img3-4 {
+    width: 140px;
+}
+.services2-list .services2-item .border-square {
+    background: #fff;;
+    max-width: 900px;
+    height: 180px;
+    border-radius: 12px;
+    box-shadow: 4px 6px #000;
+}
+.services2-list .services2-item .text {
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: #333;
+    line-height: 3.0rem;
+    margin-top: 16px;
+}
+.services2-list .services2-item .text.text4 {
+    margin-left: 20px;
+}
+.services2-list .services2-item .text span {
+    background: linear-gradient(transparent 78%, #ed9b40 78%);
+}
+
+/* サービス一覧 タイトル */
+.s-services2 .services2-list-text{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 35px;
+}
+.s-services2 .service2-text h4 {
+    position: relative;
+    padding: 10px 8px 10px 4px;
+    background: linear-gradient(150deg, #2ea0ce 40%, #1b6988 56%);
+    color: #fff;
+    text-align: center;
+    margin: 0 0 10px 0px;
+    font-size: 3.2rem;
+    font-weight: 500;
+    max-width: 590px;
+    margin: 0 auto;
+}
+
+/* サービス一覧 */
+.s-services2 .services2-list-detail {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+}
+.services2-list-detail .services2-item-detail {
+    padding: 6px 10px;
+    flex-basis: 25.2%;
+}
+
+/* ------------------------------------------------------------------- 
+ * responsive:
+ * services2
+ * ------------------------------------------------------------------- */
+@media only screen and (max-width: 1300px) {
+    .services2-list .services2-item {
+        padding: 1em 10px;
+    }
+    .services2-list .services2-item .border-radius {
+        width: 140px;
+        height: 140px;
+    }
+    .services2-list .services2-item .border-radius img {
+        width: 80px;
+    }
+    .services2-list .services2-item .border-radius img.img3-4 {
+        width: 110px;
+    }
+    .services2-list .services2-item .text {
+        font-size: 2.0rem;
+    }
+    .services2-list-detail .services2-item-detail {
+        flex-basis: 30%;
+    }
+}
+@media only screen and (max-width: 1000px) {
+    .s-services2 h2 {
+        font-size: 4.4rem;
+        margin-bottom: -30px;
+        margin-top: 14px;
+    }
+    .s-services2 .services2-list {
+        width: 100%;
+        justify-content: space-around;
+    }
+    .s-services2 .services2-subtitle img {
+        width: 96%;
+    }
+    .services2-list-detail .services2-item-detail {
+        flex-basis: 47.2%;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .s-services2 {
+        padding-bottom: 12.2rem;
+    }
+    .services2-list .services2-item {
+        padding: 1em 14px;
+    }
+    .s-services2 h2 {
+        font-size: 3.4rem;
+    }
+    .s-services2 .service2-text h4 {
+        font-size: 2.2rem;
+    }
+    .services2-list-text .service2-text {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
 /* ===================================================================
  * # works
  * 施工事例
@@ -2360,15 +2537,15 @@ button.btn--radius
     background: #FFFFFF;
     padding: 0 0 17rem 0;
     position: relative;
+    margin-top: 10px;
 }
 .s-works::before {
     content: "";
     position: absolute;
     width: 100%;
     height: 200px;
-    background-color: #feead2;
-    background: repeating-linear-gradient(-59deg, #fee5c9, #fee5c9 2px, #feead2 0, #feead2 26px);
-    top: 0;
+    background: linear-gradient(90deg, rgba(240, 249, 253, 1) 20%, rgba(209, 237, 248, 1) 60%);
+    top: -50px;
     right: 0;
 }
 .s-works h2 {
@@ -2379,7 +2556,7 @@ button.btn--radius
     padding: 22rem 0 25.2rem;
     background: #2c9ac6;
     transform: skewY(-7deg);
-    height: 560px;
+    height: 542px;
 }
 .s-works .intro-wrap .section-header {
     transform: skewY(7deg);
