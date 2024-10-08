@@ -2564,8 +2564,9 @@ button.btn--radius
 }
 
 .works-content {
-    max-width: 1160px;
+    max-width: 1200px;
     margin-top: -63.4rem;
+    transform: skewY(7deg);
 }
 .works-list {
     display: flex;
@@ -2573,8 +2574,8 @@ button.btn--radius
     /* justify-content: space-around; */
 }
 .works-list .works-item {
-    padding: 1em;
-    flex-basis: 30%;
+    padding: 1em 0.8em;
+    flex-basis: 24%;
 }
 .works-list .works-item .img-tag {
     position: relative;
@@ -2614,22 +2615,27 @@ button.btn--radius
  * ------------------------------------------------------------------- */
  @media only screen and (max-width: 1000px) {
     .s-works .intro-wrap{
-        height: 460px;
-    }
- }
- @media only screen and (max-width: 800px) {
-    .s-works .intro-wrap{
         padding: 22rem 0 15.2rem;
-        height: 2360px;
+        height: 1310px;
+    }
+    .works-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0 auto;
+    }
+    .works-list .works-item {
+        flex-basis: 49%;
     }
     .works-content {
         margin-top: -300rem;
     }
-    .works-list {
-        display: unset;
-        margin: 0px 15px;
+}
+@media only screen and (max-width: 800px) {
+    .s-works .intro-wrap{
+        height: 1000px;
     }
- }
+}
 @media only screen and (max-width: 600px) {
     .s-works {
         padding: 0 0 12rem 0;
@@ -2642,7 +2648,7 @@ button.btn--radius
     }
     .s-works .intro-wrap {
         padding: 23rem 0 2.2rem;
-        height: 1900px;
+        height: 770px;
     }
     .works-content {
         margin-top: -200rem;
@@ -2654,10 +2660,13 @@ button.btn--radius
 @media only screen and (max-width: 400px) {
     .s-works .intro-wrap {
         padding: 25rem 0 2.2rem;
-        height: 1680px;
+        height: 670px;
     }
     .works-content {
-        margin-top: -177rem;
+        margin-top: -175rem;
+    }
+    [class*="col-"] {
+        float: left!important;
     }
 }
 
@@ -2737,6 +2746,9 @@ button.btn--radius
     .price-list .price-table.t-right,
     .price-list .price-table.t-left {
         padding-left: 16px;
+    }
+    .price-list .price-table.t-right{
+        padding-right: 16px;
     }
     .price-list .price-item table {
         margin-bottom: 0rem;
