@@ -214,6 +214,9 @@
  * message
  * ------------------------------------------------------------------- */
 @media only screen and (max-width: 1200px) {
+    .s-about .top-banner {
+        margin-top: 22px;
+    }
     .about-list .about-table th {
         width: 30%;
     }
@@ -232,7 +235,7 @@
 }
 @media only screen and (max-width: 400px) {
     .s-about {
-        padding-bottom: 7.4rem;
+        padding-bottom: 30rem;
     }
 }
 
